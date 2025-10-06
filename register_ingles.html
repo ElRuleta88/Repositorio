@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>L
+
+    <h2> Register </h2>
+
+
+    <form id="register-block" action="register.php" method="POST">
+        <label for="username" id="username" class="txtup"> Username:</label>
+        <input type="text" id="feedback-user" class="username_field" name="username" required />
+
+        <br>
+
+        <label for="password" id="password" class="txtup"> Password: </label>
+        <input type="password" id="feedback-pass" class="password_field" name="password" required>
+
+        <div class="acciones-login">
+
+        <button type="submit" class="submit"> Enviar </button>
+        
+        <a class="traducir-login-register" href="register.html">Traducir</a>
+
+        </div>
+        
+        
+        <div id="feedback" class="error"></div>
+    </form>
+    <script src="java.js"> </script>
+    
+    <a  href="LogIn.html"  class="log"> You are already register? Login here.</a>
+    
+</body>
+</html>
