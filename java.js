@@ -59,3 +59,12 @@ if (password.length < 8 || password.length > 20) {
       form.submit();
       
     });
+
+ // Function to see and hide the password
+function togglePassword() {
+  const passInput = document.getElementById("feedback-pass");
+  passInput.type = passInput.type === "password" ? "text" : "password";
+}
+
+
+

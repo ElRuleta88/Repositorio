@@ -2,12 +2,12 @@
 session_start();
 
 $servername = "localhost";
-$dbname = "registration";  // Name of database in SQL
+$dbname = "registration1";  // Name of database in SQL
 $dbuser = "root";        // Default XAMPP user
 $dbpass = "";            // Default XAMPP password
 
 // Create connection
-$conn = new mysqli($servername, $dbuser, $dbpass, $dbname);
+$conn = new mysqli($servername, $dbuser, $dbpass, $dbname, null, "/opt/lampp/var/mysql/mysql.sock")
 
 // Check connection
 if ($conn->connect_error) {

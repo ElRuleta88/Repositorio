@@ -1,18 +1,20 @@
-﻿ <?php
+﻿﻿	<?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
 // Connecting to the MySQL database
 $servername = "localhost";
 $username = "root"; // Default username for XAMPP
 $password = ""; // Default password for XAMPP
-$dbname = "registration";
+$dbname = "registration1";
 
 // Create connection
-$conn = new mysqli("$servername", "$username", "", "$dbname");
+$conn = new mysqli("$servername", "$username", "", "$dbname", null, "/opt/lampp/var/mysql/mysql.sock");
 	if ($conn->connect_error) {
 		die ("Connection failed: " . $conn->connect_error);
 }	
+
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize form inputs
