@@ -3,38 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="css.css">
+    <title> SC | Register </title>
+    <link rel="stylesheet" href="./CSS/css.css">
 </head>
 
-<body>L
-
+<body>
+    <br><br><br><br><br>
     <h2> Register </h2>
-
-
     <form id="register-block" action="register.php" method="POST">
-        <label for="username" id="username" class="txtup"> Username:</label>
+        <label for="username"  class="txtup"> Username:</label>
         <input type="text" id="feedback-user" class="username_field" name="username" required />
-
         <br>
-
         <label for="password" id="password" class="txtup"> Password: </label>
         <input type="password" id="feedback-pass" class="password_field" name="password" required>
-
         <div class="acciones-login">
-
-        <button type="submit" class="submit"> Enviar </button>
-        
+        <button type="submit" class="submit"> Submit </button>
         <a class="traducir-login-register" href="register.html">Traducir</a>
-
         </div>
-        
-        
         <div id="feedback" class="error"></div>
     </form>
-    <script src="java.js"> </script>
-    
-    <a  href="LogIn.html"  class="log"> You are already register? Login here.</a>
-    
+    <script src="./JS/java.js"> </script>
+    <a  href="login.html"  class="log"> You are alredy registered? LogIn here.</a> 
 </body>
 </html>

@@ -1,46 +1,27 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDE | Iniciar Sesion</title>
+    <link rel="stylesheet" href="./CSS/css.css">
 </head>
-
 <body>
-
+    <br><br><br><br><br>
     <h2> Iniciar sesion</h2>
-
-    <!-- HTML form with username and password inputs -->
     <form id="register-block" action="login.php" method="POST">
         <label for="username" class="txtup">Usuario:</label>
         <input type="text" id="feedback-user" class="username_field" name="username" required />
-
         <br>
-
         <label for="password" class="txtup"> Contraseña: </label>
         <input type="password" id="feedback-pass" class="password_field" name="password" required />
-
         <div class="acciones-login">
-
         <button type="submit" class="submit"> Enviar </button>
-
         <a class="traducir-login-register" href="login_ingles.html" > Translate </a>
-
         </div>
-       
-       
         <div id="feedback" class="error"></div>
-
-         
     </form>
-
-    
-
     <a href="register.html" class="log">¿No tienes una cuenta? Regístrate aquí.</a>
-
-    <script src="java.js"> </script>
-
+    <script src="./JS/java.js"> </script>
 </body>
-
 </html>
